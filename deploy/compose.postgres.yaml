@@ -1,0 +1,15 @@
+# RKP worker — Compose is documentation; live instance is `rkp-postgres` on 127.0.0.1:5433.
+# Do not bind 54329 (Paperclip embedded Postgres).
+services:
+  postgres:
+    image: pgvector/pgvector:pg18
+    container_name: rkp-postgres
+    restart: unless-stopped
+    ports:
+      - "127.0.0.1:5433:5432"
+    env_file:
+      - /etc/rkp/rkp-postgres.env
+    volumes:
+      - /var/lib/rkp/pg:/var/lib/postgresql
+    mem_limit: 4g
+    cpus: 2.0

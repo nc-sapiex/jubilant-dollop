@@ -1,0 +1,22 @@
+[project]
+name = "rkp"
+version = "0.1.0"
+description = "Regulatory knowledge platform — R0 acquisition spike"
+requires-python = ">=3.11"
+dependencies = [
+  "dbos==2.31.0",
+  "psycopg[binary]==3.3.5",
+]
+
+[project.optional-dependencies]
+dev = ["pytest==9.1.1"]
+
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+include = ["rkp*"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]

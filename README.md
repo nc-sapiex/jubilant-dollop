@@ -39,4 +39,6 @@ Operating model (one VPS): [`docs/operating-model-v2.2-one-vps.md`](docs/operati
 
 ## Status
 
-Stage 0 locked. Execution overlay E0 written. Next: E1 `wk-main` split (approval) then T01 Postgres as approved IaC. Do not start R1 schema work that depends on DBOS until the spike gate passes.
+Stage 0 locked. R0 spike in progress on a PR: Postgres 18.6 + pgvector 0.8.6 on `127.0.0.1:5433`, DBOS acquisition workflow with crash-replay tests.
+
+Do not start R1 schema work that depends on DBOS until that PR is merged and the spike gate is accepted.

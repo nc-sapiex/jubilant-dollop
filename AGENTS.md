@@ -6,9 +6,11 @@ This repository is `nc-sapiex/jubilant-dollop`, the regulatory knowledge platfor
 
 - Implement only from GitHub issues labelled `ready-for-agent` with testable acceptance and no open blockers.
 - Specs: `docs/prd.md`, `docs/design-v2.md`, `docs/stage-0-decisions.md`.
+- Execution overlay: `docs/operating-model-v2.2-one-vps.md`. BMAD, GSD, Ponytail, and Hermes-as-implementer are out. YAGNI: do not add a framework because a sibling product uses it.
 - Canonical approval is a PostgreSQL fact. Directus cannot bypass the state machine.
 - Secrets (Directus licence, API keys) never in git. Use `.env.example`.
 - Public RBI material only. No client or personal data to model providers without a data-processing register row.
+- Agents open PRs. Humans merge. No push to `main`, no production DB install from an agent session without an infrastructure approval.
 
 ## Stack pins
 

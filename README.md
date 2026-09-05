@@ -35,6 +35,8 @@ Authoritative specs: [`docs/prd.md`](docs/prd.md), [`docs/design-v2.md`](docs/de
 
 PostgreSQL 18 + pgvector ≥ 0.8.2 · DBOS Transact (Celery/Redis fallback if R0 fails) · Directus 12 (Open Innovation Grant) · Docling 2.x + VLM OCR in CPU mode · internal AI gateway.
 
+Operating model (one VPS): [`docs/operating-model-v2.2-one-vps.md`](docs/operating-model-v2.2-one-vps.md). Hermes is specialist only; implementer is a future `wk-main` identity, not this session.
+
 ## Status
 
-Stage 0 locked. Next: R0 DBOS acquisition spike on this VPS. Do not start R1 schema work that depends on DBOS until the spike gate passes.
+Stage 0 locked. Execution overlay E0 written. Next: E1 `wk-main` split (approval) then T01 Postgres as approved IaC. Do not start R1 schema work that depends on DBOS until the spike gate passes.

@@ -24,6 +24,6 @@ Directus (#3) is in the R0 *release table* but is not required to prove NFR-07. 
 
 DC-8 only (forced crash). DC-1..7 wait for R1.
 
-## Human merge
+## Human review and merge
 
-Every PR. Hermes reviews; does not merge.
+Hermes may commit on a task branch and open a PR. Review and merge are human decisions. Hermes does not review or merge PRs.

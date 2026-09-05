@@ -25,11 +25,11 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - uses: astral-sh/setup-uv@v4
-        with:
-          python-version: "3.11"
+      - name: Python
+        run: uv python install 3.11
       - name: Install
-        run: uv pip install --system -e ".[dev]"
+        run: uv pip install --python 3.11 -e ".[dev]"
       - name: Test
         env:
           RKP_TEST_DATABASE_URL: postgresql://rkp:test@127.0.0.1:5432/rkp
-        run: pytest -q
+        run: uv run --python 3.11 pytest -q

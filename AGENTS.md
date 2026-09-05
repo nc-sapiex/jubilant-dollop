@@ -19,3 +19,17 @@ PostgreSQL 18, pgvector ≥ 0.8.2, Directus 12, Docling 2.x, DBOS Transact. Cele
 ## Host
 
 `srv1447173.hstgr.cloud` — 4 vCPU, 16 GB, no GPU. This machine also runs Hermes. OCR concurrency starts at 1. Measure pages/hour before sizing Phase B.
+
+## Agent skills
+
+### Issue tracker
+
+GitHub Issues on `nc-sapiex/jubilant-dollop` via `gh`. See `docs/agents/issue-tracker.md`.
+
+### Triage labels
+
+Canonical five: `needs-triage`, `needs-info`, `ready-for-agent`, `ready-for-human`, `wontfix`. See `docs/agents/triage-labels.md`.
+
+### Domain docs
+
+Single-context: `CONTEXT.md` (lazy) + `docs/adr/` + PRD/design until the glossary exists. See `docs/agents/domain.md`.

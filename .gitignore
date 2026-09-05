@@ -1,0 +1,39 @@
+# Secrets and local env
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+directus-license*
+licence-key*
+
+# Python
+.venv/
+venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Node (Directus / website)
+node_modules/
+.next/
+dist/
+
+# Evidence store (content-addressed originals — too large, not for git)
+data/evidence/
+data/page-images/
+*.pdf
+
+# DBOS / Postgres local
+*.sql.gz
+pgdata/
+
+# OS / editor
+.DS_Store
+.idea/
+.vscode/
+
+# Hermes planning working copies may be local; committed snapshots live under docs/
+scratch-local/
